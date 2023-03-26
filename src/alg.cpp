@@ -28,7 +28,7 @@ int binarySearch(int* arr, int low, int right, int value) {
   return c;
 }
 
-int countPairs1(int *arr, int len, int value) {
+int countPairs2(int *arr, int len, int value) {
   int sum = 0;
   for (int i = 0; i < len - 1; i++) {
     for (int j = len - 1; j > i; j--) {
@@ -39,7 +39,7 @@ int countPairs1(int *arr, int len, int value) {
   }
   return sum;
 }
-int countPairs2(int *arr, int len, int value) {
+int countPairs1(int *arr, int len, int value) {
   int sum = 0;
   for (int i = 0; i < len; i++) {
     for (int j = 0; j < i; j++) {
